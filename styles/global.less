@@ -4,44 +4,167 @@
 //
 // -----------------------------------------------
 
+// Bootstrap and Fonts
+// -----------------------------------------------
 @import '../styles/bootstrap/css/bootstrap.css';
-@import (css) url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap');
+@import (css)
+	url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap');
 
+// Reusable Components
+// -----------------------------------------------
 @import '../components/reusable/reusable.less';
+
+// Pages
+// -----------------------------------------------
+@import './index.less';
+@import './about.less';
+@import './experience.less';
+
+* {
+	margin: 0;
+	padding: 0;
+}
 
 html,
 body {
 	padding: 0;
 	margin: 0;
+	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 62.5%;
+	// font-size: 120%;
+}
+
+body {
+	background-color: #0a192f !important;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+	color: unset;
+	text-decoration: none !important;
 }
 
 * {
 	box-sizing: border-box;
 }
 
-// // Container
-// mainContentContainer
-// // Text
-// smallText
-// mediumText
-// largeText
+// Text
+// -----------------------------------------------
+.text10 {
+	font-size: 1em;
+}
 
-// // Link
-// textLink
+.text20 {
+	font-size: 2em;
+}
 
-// // Colors
-// whiteText
-// goldText
-// lightBlueText
-// darkGreyText
+.text25 {
+	font-size: 2.5em;
+}
 
-// // Backgrounds
-// lightBlueBackground
-// navyBackground
+.text30 {
+	font-size: 3em;
+}
+
+.text35 {
+	font-size: 3.5em;
+}
+
+.text40 {
+	font-size: 4em;
+}
+
+.text50 {
+	font-size: 5em;
+}
+
+.text70 {
+	font-size: 7em;
+}
+
+.text90 {
+	font-size: 9em;
+}
+
+#one,
+#two {
+	margin-bottom: -15px;
+}
+
+.boldText {
+	font-weight: bold;
+}
+
+.sourceSansText {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.openSansText {
+	font-family: 'Open Sans', sans-serif;
+}
+
+// Links
+// -----------------------------------------------
+.textLink {
+	cursor: pointer;
+}
+
+// Colors
+// -----------------------------------------------
+.whiteText {
+	color: white;
+}
+
+.goldText {
+	color: #eeb011;
+}
+
+.fadeGoldText {
+	color: #d4c4b6;
+}
+
+.darkGreyText {
+	color: #a2a7b7;
+}
+
+// Backgrounds
+// -----------------------------------------------
+.lightBlueBackground {
+	background-color: #38445d;
+}
+
+.navyBackground {
+	background-color: #0a192f;
+}
+
+.transparentBackground {
+	background-color: transparent;
+}
+
+// Buttons
+// -----------------------------------------------
+.buttonContainer {
+	.goldBorder {
+		border-color: #eeb011;
+	}
+
+	button {
+		border-radius: 69px;
+		padding-left: 66px;
+		padding-right: 66px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: transparent;
+	}
+
+	button:focus {
+		outline: none;
+	}
+}
