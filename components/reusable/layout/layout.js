@@ -13,6 +13,9 @@
 // Necessary Imports
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+// import ../util/firebase/firebaseConfig.js
+import firebase from 'firebase/app';
+import initFirebase from '../../../util/firebase/firebase';
 // -----------------------------------------------
 
 // -----------------------------------------------
@@ -86,13 +89,45 @@ export default function Layout({ children, home }) {
 					integrity='sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW'
 					crossorigin='anonymous'
 				></script>
+
+				
+				
+
+				{/* <script> */}
+  					{/* // Your web app's Firebase configuration */}
+  					{/* // For Firebase JS SDK v7.20.0 and later, measurementId is optional */}
+  					{/* var firebaseConfig = {
+					apiKey: "AIzaSyCbR8sO2MQlGZT3WvU-hLYIu6SRN_Bh6Eo",
+					authDomain: "portfolio-v3-84ea4.firebaseapp.com",
+					projectId: "portfolio-v3-84ea4",
+					storageBucket: "portfolio-v3-84ea4.appspot.com",
+					messagingSenderId: "278030025109",
+					appId: "1:278030025109:web:c5b16998bf46700a00369c",
+					measurementId: "G-104Y5D2EMB"
+  					}; */}
+  					{/* // Initialize Firebase */}
+  					{/* firebase.initializeApp(firebaseConfig); */}
+  					{/* firebase.analytics(); */}
+				{/* </script> */}
+				{/* <script src="../util/firebase/firebaseConfig.js"></script> */}
 			</Head>
+			<body>
 
 			<NavBar navCheck={checkPage()} />
 
 			<main>{children}</main>
 
 			<Footer />
+			{/* <!-- The core Firebase JS SDK is always required and must be listed first --> */}
+				<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+{/* <!-- TODO: Add SDKs for Firebase products that you want to use */}
+ {/* https://firebase.google.com/docs/web/setup#available-libraries --> */}
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+<script src="../../../util/firebase/firebase"></script>	
+	{/* {initFirebase()} */}
+			</body>
 		</div>
 	);
 }

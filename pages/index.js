@@ -1,7 +1,14 @@
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/reusable/layout';
 import Link from 'next/link';
 
+import { getGithubRepos } from '../util/firebase/githubApi';
+
 export default function Home() {
+	useEffect(() => {
+		getGithubRepos();
+	});
+
 	return (
 		<Layout>
 			<main>
