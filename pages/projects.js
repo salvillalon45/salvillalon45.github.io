@@ -11,6 +11,8 @@
 
 // -----------------------------------------------
 // Necessary Imports
+import { React, useEffect, useState, useReducer } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 // -----------------------------------------------
 
 // -----------------------------------------------
@@ -20,6 +22,11 @@ import DataList from '../components/reusable/DataList';
 // -----------------------------------------------
 
 export default function Projects() {
+	const projectsState = useSelector((state) => state.projects);
+
+	console.log('What is projectStaet');
+	console.log(projectsState);
+
 	return (
 		<Layout>
 			<main>
@@ -42,8 +49,9 @@ export default function Projects() {
 							'Title',
 							'Made At',
 							'Built With',
-							'Link'
+							'Link',
 						]}
+						data={projectsState.gitHubReposData}
 					/>
 				</div>
 			</main>

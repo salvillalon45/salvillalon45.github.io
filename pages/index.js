@@ -1,14 +1,25 @@
-import React, { useState, useEffect } from 'react';
+// -----------------------------------------------
+//
+// pages -> index.js
+// Desc: The Home Page
+//
+// -----------------------------------------------
+
+// -----------------------------------------------
+// Redux
+// -----------------------------------------------
+
+// -----------------------------------------------
+// Necessary Imports
 import Layout from '../components/reusable/layout';
 import Link from 'next/link';
+// -----------------------------------------------
 
-import { getGithubRepos } from '../util/firebase/githubApi';
+// -----------------------------------------------
+// External Imports
+// -----------------------------------------------
 
 export default function Home() {
-	useEffect(() => {
-		getGithubRepos();
-	});
-
 	return (
 		<Layout>
 			<main>

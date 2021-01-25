@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import selfEnrollmentFlowReducer from './selfEnrollmentFlowReducer';
+import projectsReducer from './projectsReducer';
 
 const rootReducer = combineReducers({
-	selfEnrollmentFlow: selfEnrollmentFlowReducer
+	projects: projectsReducer,
 });
 
 export default rootReducer;
