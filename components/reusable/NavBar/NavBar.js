@@ -65,7 +65,7 @@ export default function NavBar(props) {
 						<Link href='/projects'>
 							<a className='nav-link'>
 								<li className='nav-item text25 goldText boldText'>
-									Project
+									Projects
 								</li>
 							</a>
 						</Link>
