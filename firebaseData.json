@@ -1,0 +1,210 @@
+{
+	"githubRepos": {
+		"hackathons": [
+			{
+				"CodeForGood-Team15": {
+					"title": "Chinese Mutual Aid Foundation CRM Hackathon Idea",
+					"github_repo_link": "https://github.com/salvillalon45/CodeForGood-Team15.git",
+					"homepage_link": "https://salvillalon45.github.io/CodeForGood-Team15/cmaaforgood/html/home.html",
+					"tech": "Bootstrap, Django",
+					"made_at": "JPMorgan Code For Good - Chicago",
+					"year": "2018",
+					"description": "This is a 24 hours Hackathon in Chicago, Illinois. I collaborated with a group of 6 students to help a Non-Profit organization called Chinese Mutual Aid Association by creating a Web Application to help solve their parent translation and student enrollment problem. We also helped visual student progress and provide extra homework practice for students. I became Lead Front-End Developer to create the Front-End of the web application. This was my first hackathon and we received 2nd place winner out of 17 competing teams. Our project will continue to be used in JP Morgan Chase's Force for Good Hackathon"
+				}
+			}
+		],
+		"onlinePrograms": [
+			{
+				"freecodecamp-ProductLandingPage": {
+					"title": "Estetica Lucy Beauty Salon Sample",
+					"github_repo_link": "https://github.com/salvillalon45/freecodecamp-ProductLandingPage",
+					"homepage_link": "https://salvillalon45.github.io/freecodecamp-ProductLandingPage/",
+					"tech": "Bootstrap",
+					"made_at": "FreeCodeCamp: Responsive Web Design Certification",
+					"year": "2018",
+					"description": "[FreeCodeCamp: Responsive Web Design Certification] - Build a Product Landing Page. In this project, I was tasked with creating a product landing page. I decided to use a real business to practice. This business is a Hair Salon that my Aunt runs in Mexicali, Baja California. Her Salon is in Mexico so I had to make the entire website in Spanish as it was a business in Mexico."
+				}
+			},
+			{
+				"freecodecamp-sherwynnTributepage": {
+					"title": "Great Mentor Tribute Page",
+					"github_repo_link": "https://github.com/salvillalon45/freecodecamp-sherwynnTributepage",
+					"homepage_link": "https://salvillalon45.github.io/freecodecamp-sherwynnTributepage/",
+					"tech": "HTML, CSS",
+					"made_at": "FreeCodeCamp: Responsive Web Design Certification",
+					"year": "2017",
+					"description": "[FreeCodeCamp: Responsive Web Design Certification] - Project: Tribute Page. This project was done to work on my HTML and CSS skills. My task was to create tribute page about someone. I decided to do it on my great mentor Sherwynn Umali, Associate Dean of Students at Student Life and Leadership in UC Irvine! Thanks to her I was able to find my passion in Computer Science!"
+				}
+			},
+			{
+				"freecodecamp-TutorialDocumentation": {
+					"title": "My Own Documentation",
+					"github_repo_link": "https://github.com/salvillalon45/freecodecamp-TutorialDocumentation",
+					"homepage_link": "https://salvillalon45.github.io/freecodecamp-TutorialDocumentation/",
+					"tech": "Bootstrap",
+					"made_at": "FreeCodeCamp: Responsive Web Design Certification",
+					"year": "2018",
+					"description": "[Responsive Web Design Projects] - Build a Technical Documentation Page. In this project, I was tasked with creating a Documentation Page. I decided to use the content that I made on my first tutorial. This is great project where I was able to create a side navigation bar that takes the user throughout the page. The Side Nav is sticky and has its own navigation. You can find my first tutorial in my projects listed here!"
+				}
+			},
+			{
+				"theOdinProject-Calculator": {
+					"title": "My First Calculator ",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-Calculator",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-Calculator/index.html",
+					"tech": "HTML, CSS, Javascript",
+					"made_at": "The Odin Project: Web Development 101",
+					"year": "2020",
+					"description": "[The Odin Project: Web Development 101] - Project: Calculator. Creating a calculator that will be able to add, subtract, multiply, and divide. My task was just to create a simple calculator but I wanted to practice and I added extra things such as keyboard support. User is able to use there keyboard to type numbers, Added another display to show previous calculations made, Added a . button and let users input decimals Added a 'backspace' button, so the user can undo if they click the wrong number. In the calculator this is the DEL button"
+				}
+			},
+			{
+				"theOdinProject-EtchASketch": {
+					"title": "A Fun Game of Etch and Sketch",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-Calculator",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-Calculator/index.html",
+					"tech": "HTML, CSS, Javascript",
+					"made_at": "The Odin Project: Web Development 101",
+					"year": "2020",
+					"description": "[The Odin Project: Web Development 101] - Project: Etch-A-Sketch. From Project Description In this project you'll be creating a pretty neat toy for your portfolio to flex your DOM manipulation skills. You're going to build a browser version of something between a sketchpad and an Etch-A-Sketch."
+				}
+			},
+			{
+				"theOdinProject-Frameworks": {
+					"title": "Getting Familiar with Vue - Restaurant Sample Page",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-Frameworks",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-Frameworks/",
+					"tech": "HTML, CSS, Javascript, Vue",
+					"made_at": "The Odin Project: Javascript",
+					"year": "2020",
+					"description": "[The Odin Project: Javascript] - Project: Frameworks. In this project, redid a project that I originally did in vanilla Javascript by using Vue. I had to learn how to use Vue and how to deploy it so that it can be viewed. This was a great project to get familiar with a new framework and learn the differences between React and Vue"
+				}
+			},
+			{
+				"theOdinProject-GoogleHomePage": {
+					"title": "Recreating Google Home Page",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-GoogleHomePage",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-GoogleHomePage/index.html ",
+					"tech": "HTML & CSS",
+					"made_at": "The Odin Project: Web Development 101",
+					"year": "2020",
+					"description": "[The Odin Project: Web Development 101] - Project: Google Home Page. The goal of the project is to start thinking about how elements get placed on the page and roughly how they get styled and aligned. One of the challenges for this project was creating a sticky footer. I had the idea of moving the footer by using margin-top, but I felt that this is not correct solution since I felt it was too brute force. I felt that changing the display to flex was the way to go. This article helped me understand how to do it Sticky Footer, Five Ways. Through this project I was exposed to flex-grow, flex-shrink and flex-basis. Some properties I have not used before. After applying this changes, I noticed that footer was not going all the way across the screen it had some extra margin that was preventing it from fully extending. I learned that we can apply html, body { margin: 0; } that will reset the pages default margin and padding for the entire html file."
+				}
+			},
+			{
+				"theOdinProject-Library": {
+					"title": "A Library that Uses Firebase",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-Library",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-Library/",
+					"tech": "HTML, CSS, Javascript, Firebase",
+					"made_at": "The Odin Project: Javascript",
+					"year": "2020",
+					"description": "[The Odin Project: Javascript] - Project: Library. Created a small library app that allows users to enter the books they have read. This is tracker for keeping books you have read! Also, part of this project was either use local storage or firebase to store all the books. I decided to go on step further and practice using Firebase! I learned that this is a really great tool to use! "
+				}
+			},
+			{
+				"theOdinProject-Pomodoro": {
+					"title": "A Pomodoro Clock",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-Pomodoro",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-Pomodoro/index.html",
+					"tech": "HTML, CSS, Javascript",
+					"made_at": "The Odin Project: Web Development 101",
+					"year": "2020",
+					"description": "[The Odin Project: Web Development 101] - Project: Pomodoro. Here I created a Pomodoro clock similar to this which will count down twenty-five minutes of work, indicate it is break time, count down five minutes, then start over again. I added some extra things. Such as the following: Added support for customizing the long break, Added chimes so that user knows when the break started, work has started, or long break has started, Modify title tag so that the user can move to a different tab and know how much time they have left. This was a challenging project. I had restart my codebase since my original attempt was getting me confused. After restarting everything became more clear. This was the last project of the Web Development 101 course!"
+				}
+			},
+			{
+				"theOdinProject-TicTacToe": {
+					"title": "Tic Tac Toe!",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-TicTacToe",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-TicTacToe/",
+					"tech": "HTML, CSS, Javascript",
+					"made_at": "The Odin Project: Javascript",
+					"year": "2020",
+					"description": "[TheOdinProject: Javascript] - Project: Tic Tac Toe. I really proud how this came up! Go ahead and play with another person. It will be fun. "
+				}
+			},
+			{
+				"theOdinProject-TodoList": {
+					"title": "Todo List",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-TodoList",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-TodoList/",
+					"tech": "HTML, CSS, Javascript, npm, Webpack",
+					"made_at": "The Odin Project: Javascript",
+					"year": "2020",
+					"description": "[The Odin Project: Javascript] - Project: Todo List. In this project, I used local storage to be able to store the users todo. I went the extra effort that the user can edit their task so that they write notes of their progress. This was a great project that allowed me to practice: factory functions and the module patterns, OOP Principles (especially Single Responsiblity Principle and 'tightly coupled' objects are and why we want to avoid them), ES6 modules, use an npm file from scratch, and Webpack. The purpose of this project was to practice"
+				}
+			},
+			{
+				"theOdinProject-WeatherApp": {
+					"title": "Best Weather App",
+					"github_repo_link": "https://github.com/salvillalon45/theOdinProject-WeatherApp",
+					"homepage_link": "https://salvillalon45.github.io/theOdinProject-WeatherApp/",
+					"tech": "HTML, CSS, Javascript, Vue",
+					"made_at": "The Odin Project: Javascript",
+					"year": "2020",
+					"description": "[The Odin Project: Javascript] - Project: WeatherApp. In this project, I practice how to make api requests. To do them, I used fetch and async "
+				}
+			}
+		],
+		"personal": [
+			{
+				"portfolio-version-1": {
+					"title": "Portfolio Version 1",
+					"github_repo_link": "https://github.com/salvillalon45/portfolio-version-1",
+					"homepage_link": "http://salvador-villalon.appspot.com/index/",
+					"tech": "HTML, CSS, Bootstrap, Google App Engine, Flask",
+					"made_at": "FreeCodeCamp: Responsive Web Design Certification",
+					"year": "2018",
+					"description": "[FreeCodeCamp: Responsive Web Design Certification] - Project: Personal Website. Two years ago when I was a Sophomore at UC Irvine, I told myself that one day I was going to create my own personal website. Then, during Fall 2017 I started taking FreeCodeCamp Responsive Web Design Certificate and one of the projects was to create your own Personal Website. I decided to really embrace this project. It was until Summer 2018 were I finally created a functional Personal Website. I initially started with HTML and CSS, but after learning about Flask. I decided to use it on my website and it made the logic behind the code easier to understand. Also, since I used Flask this meant that I had to deploy to a cloud service like Google App Engine. GitHub Pages is meant static pages."
+				}
+			},
+			{
+				"portfolio-version-2": {
+					"title": "Portfolio Version 2",
+					"github_repo_link": "https://github.com/salvillalon45/portfolio-version-2",
+					"homepage_link": "https://salvillalon45.github.io/portfolio-version-2/",
+					"tech": "HTML, CSS, Bootstrap",
+					"made_at": "Summer 2018 in New York City",
+					"year": "2018",
+					"description": "[Personal Project] - Project: Portfolio Version 2. Version two of my Portfolio. At an Airbnb, I had a Front-End Developer as a roommate. He helped learn more about Front-End Development and helped me come up with a design that truly represents me."
+				}
+			}
+		],
+		"workInternships": [
+			{
+				"JPMCSummer2019-Thoughts": {
+					"title": "My Thoughts on my JPMC Summer 2019 Internship",
+					"github_repo_link": "https://github.com/salvillalon45/JPMCSummer2019-Thoughts",
+					"homepage_link": "http://jpmc_thoughts.surge.sh/",
+					"tech": "Bootstrap, React, Surge",
+					"made_at": "Summer 2019 in Chicago",
+					"year": "2019",
+					"description": "[JPMC 2019 Summer] - Project: A website on my Summer 2019. A React Application where I share my thoughts and experiences on my internship at JPMorgan Chase & Co at the Chicago, IL office. This application served as a way for me to practice React and JavaScript."
+				}
+			},
+			{
+				"SPGISummer2018-FlaskTutorial": {
+					"title": "My JPMC Summer 2019 Internship Experience!",
+					"github_repo_link": "https://github.com/salvillalon45/SPGISummer2018-FlaskTutorial",
+					"homepage_link": "https://medium.freecodecamp.org/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492",
+					"tech": "HTML, CSS, Flask, Google App Engine, Medium",
+					"made_at": "Summer 2018 in New York City",
+					"year": "2018",
+					"description": "[SPGI 2018 Summer] - Project: A Tutorial to Web Applications Using Python Flask and How to Deploy Them to the Cloud. My first tutorial where I teach others how to create a web application using Flask and deploy to the cloud using Google App Engine. It is published in the freeCodeCamp's Medium Publication"
+				}
+			},
+			{
+				"SPGISummer2018-LegacyRepository": {
+					"title": "My SPGI Summer 2018 Internship Experience!",
+					"github_repo_link": "https://github.com/salvillalon45/SPGISummer2018-LegacyRepository",
+					"homepage_link": "https://salvillalon45.github.io/SPGISummer2018-Legacy/index.html",
+					"tech": "HTML, CSS, Bootstrap",
+					"made_at": "Summer 2018 in New York City",
+					"year": "2018",
+					"description": "[SPGI 2018 Summer] - Project: My Internship Projects. A respository containing everything that I did on my S&P Dow Jones Indices internship. In this internship I learned about the following topics: Web Applications, REST APIs, Natural Language Toolkit, Containers (Docker), UI Design. I even created my own tutorial"
+				}
+			}
+		]
+	}
+}
