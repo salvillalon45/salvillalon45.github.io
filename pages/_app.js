@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
 	const projectsState = useSelector((state) => state.projects);
 	useEffect(() => {
 		// Get GitHub Repos
-		getGithubRepos();
+		// getGithubRepos();
 
 		// Retrieve Data from Firebase GitHubRepo db
 		readGitHubRepos().then((result) => {
