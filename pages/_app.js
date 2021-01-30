@@ -16,6 +16,7 @@ import { Provider } from 'react-redux';
 import { createWrapper, withRedux } from 'next-redux-wrapper';
 import { useDispatch, useSelector } from 'react-redux';
 import store from '../store/store';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.less';
 // -----------------------------------------------
 
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }) {
 
 	const projectsState = useSelector((state) => state.projects);
 	useEffect(() => {
+		console.log('Start useEffect in App');
 		// Get GitHub Repos
 		// getGithubRepos();
 
@@ -38,6 +40,8 @@ function MyApp({ Component, pageProps }) {
 			// Store it in redux store
 			dispatch(storeGitHubRepos(result));
 		});
+
+		console.log('Finished useEffect in App');
 	}, []);
 
 	return (

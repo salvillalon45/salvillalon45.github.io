@@ -33,6 +33,7 @@ export default function NavBar(props) {
 		<nav
 			className={'navbar navbar-expand-lg navbar-light ' + checkNavBar()}
 		>
+			{console.log('Render Navbar')}
 			<div className='container-fluid'>
 				<a className='navbar-brand' href='#'>
 					Salvador Villalon
@@ -54,6 +55,14 @@ export default function NavBar(props) {
 					id='navbarSupportedContent'
 				>
 					<ul className='navbar-nav mb-2 mb-lg-0'>
+						<Link href='/'>
+							<a className='nav-link'>
+								<li className='nav-item text25 goldText boldText'>
+									Home
+								</li>
+							</a>
+						</Link>
+
 						<Link href='/about'>
 							<a className='nav-link'>
 								<li className='nav-item text25 goldText boldText'>
@@ -74,6 +83,14 @@ export default function NavBar(props) {
 							<a className='nav-link'>
 								<li className='nav-item text25 goldText boldText'>
 									Experience
+								</li>
+							</a>
+						</Link>
+
+						<Link href='/'>
+							<a className='nav-link'>
+								<li className='nav-item text25 goldText boldText'>
+									Resume
 								</li>
 							</a>
 						</Link>

@@ -32,13 +32,13 @@ import Paper from '@material-ui/core/Paper';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
+import Row from './Row';
+
 // Images
 import JPMC from '../../../public/images/projects/jpmc.PNG';
 // -----------------------------------------------
 
 export default function DataList(props) {
-	const [open, setOpen] = useState(false);
-
 	function createTableCells() {
 		const { columnsArray } = props;
 
@@ -51,199 +51,190 @@ export default function DataList(props) {
 		});
 	}
 
+	// function showArrowIcon(open) {
+	// 	console.log('Inside showArrowIcon');
+	// 	console.log({ open });
+	// 	if (open) {
+	// 		console.log('Show UP');
+	// 		return <i className='fas fa-angle-up faIcon' />;
+	// 	}
+	// 	console.log('Show DOWN');
+	// 	return <i className='fas fa-angle-down faIcon' />;
+	// 	// open ? (
+	// 	// 	<i className='fas fa-angle-up faIcon' />
+	// 	// ) : (
+	// 	// 	<i className='fas fa-angle-down faIcon' />
+	// 	// );
+	// }
+
 	function createTableRows() {
+		console.log('Inside createTableRows()');
 		const { data } = props;
-		console.log('What is data');
-		console.log(data);
 
 		if (data !== null && data !== undefined) {
-			return Object.entries(data).map((dataArray) => {
-				return dataArray[1].map((dataEntry) => {
-					console.table(dataEntry);
-					console.log(Object.values(dataEntry)[0].year);
-					console.log(dataEntry.year);
-					console.log(Object.keys(dataEntry));
-					// let {
-					// 	year,
-					// 	description,
-					// 	made_at,
-					// 	tech,
-					// 	title,
-					// 	github_repo_link,
-					// 	homepage_link
-					// } = dataEntry[0];
-					// let madeAt = made_at;
-					// console.log({
-					// 	year,
-					// 	description,
-					// 	made_at,
-					// 	tech,
-					// 	title,
-					// 	github_repo_link,
-					// 	homepage_link
-					// });
+			const sortedData = data.sort(
+				(a, b) => Object.values(b)[0].year - Object.values(a)[0].year
+			);
 
-					const year = Object.values(dataEntry)[0].year;
-					const description = Object.values(dataEntry)[0].description;
-					const madeAt = Object.values(dataEntry)[0].made_at;
-					const tech = Object.values(dataEntry)[0].tech;
-					const title = Object.values(dataEntry)[0].title;
-					const gitHublink = Object.values(dataEntry)[0]
-						.github_repo_link;
-					const projectHomePageLink = Object.values(dataEntry)[0]
-						.homepage_link;
-					console.log({ year });
-					console.log({ description });
-					return (
-						<React.Fragment>
-							<TableRow>
-								<TableCell>
-									<IconButton
-										aria-label='expand row'
-										size='small'
-										onClick={() => setOpen(!open)}
-									>
-										{open ? (
-											<i className='fas fa-angle-up faIcon' />
-										) : (
-											<i className='fas fa-angle-down faIcon' />
-										)}
-									</IconButton>
-								</TableCell>
+			function showArrowIcon(open, index, id) {
+				console.log('Inside showArrowIcon');
+				console.log({ open });
+				if (index === id) {
+					console.log('Match!');
+					if (open) {
+						console.log('Show UP');
+						return <i className='fas fa-angle-up faIcon' />;
+					}
 
-								<TableCell component='th' scope='row'>
-									{year}
-								</TableCell>
+					console.log('Show DOWN');
+					return <i className='fas fa-angle-down faIcon' />;
+					// open ? (
+					// 	<i className='fas fa-angle-up faIcon' />
+					// ) : (
+					// 	<i className='fas fa-angle-down faIcon' />
+					// );
+				} else if (index !== id) {
+					console.log('NO Match!');
+					return <i className='fas fa-angle-up faIcon' />;
+				} else {
+					console.log('NEITHER Match!');
+					return <i className='fas fa-angle-down faIcon' />;
+				}
+			}
 
-								<TableCell
-									className='projectTitle'
-									align='left'
+			return sortedData.map((projectData, index) => {
+				const year = Object.values(projectData)[0].year;
+				const description = Object.values(projectData)[0].description;
+				const madeAt = Object.values(projectData)[0].made_at;
+				const tech = Object.values(projectData)[0].tech;
+				const title = Object.values(projectData)[0].title;
+				const gitHublink = Object.values(projectData)[0]
+					.github_repo_link;
+				const projectHomePageLink = Object.values(projectData)[0]
+					.homepage_link;
+				const [open, setOpen] = useState(false);
+				const [id, setId] = useState('');
+				console.log('What is open:: ' + open);
+				console.log(projectData);
+				console.log({ index, id });
+				return (
+					<React.Fragment>
+						<TableRow>
+							<TableCell>
+								<IconButton
+									aria-label='expand row'
+									size='small'
+									onClick={() => {
+										console.log('In OnClikc');
+										console.log({ open });
+										if (index === id) {
+											console.log({ index, id });
+											setOpen(!open);
+										}
+										setId(index);
+										console.log({ open });
+									}}
 								>
-									{title}
-								</TableCell>
+									{showArrowIcon(open, index, id)}
+									{/* {open ? (
+										<i className='fas fa-angle-up faIcon' />
+									) : (
+										<i className='fas fa-angle-down faIcon' />
+									)} */}
+								</IconButton>
+							</TableCell>
 
-								<TableCell align='left'>{madeAt}</TableCell>
+							<TableCell component='th' scope='row'>
+								{year}
+							</TableCell>
 
-								<TableCell align='left'>{tech}</TableCell>
+							<TableCell className='projectTitle' align='left'>
+								{title}
+							</TableCell>
 
-								<TableCell align='left'>
-									<div className='linksContainer'>
-										<Link href={gitHublink}>
-											<a>
-												<i className='fab fa-github-square faIcon' />
-											</a>
-										</Link>
+							<TableCell align='left'>{madeAt}</TableCell>
 
-										<Link
-											href={{
-												pathname: projectHomePageLink
-											}}
-										>
-											<a>
-												<i className='fas fa-external-link-alt faIcon' />
-											</a>
-										</Link>
-									</div>
-								</TableCell>
-							</TableRow>
+							<TableCell align='left'>{tech}</TableCell>
 
-							<TableRow>
-								<TableCell
-									style={{ paddingBottom: 0, paddingTop: 0 }}
-									colSpan={6}
-								>
-									<Collapse
-										in={open}
-										timeout='auto'
-										unmountOnExit
+							<TableCell align='left'>
+								<div className='linksContainer'>
+									<Link href={gitHublink}>
+										<a>
+											<i className='fab fa-github-square faIcon' />
+										</a>
+									</Link>
+
+									<Link
+										href={{
+											pathname: projectHomePageLink
+										}}
 									>
-										{/* <Box margin={1}> */}
-										<div className='container'>
-											<div className='row'>
-												<div className='col-md-12 col-sm-12 dataDropdownContainer'>
-													<div className='dataContainer'>
-														<p className='text10 sourceSansText whiteText boldText'>
-															About {title}
-														</p>
-														<p className='text10 sourceSansText whiteText'>
-															{description}
-														</p>
-														<p className='text10 sourceSansText whiteText'>
-															<b>
-																Technologies
-																Used:
-															</b>{' '}
-															{tech}
-														</p>
-													</div>
+										<a>
+											<i className='fas fa-external-link-alt faIcon' />
+										</a>
+									</Link>
+								</div>
+							</TableCell>
+						</TableRow>
 
-													<div className='dataPictureContainer'>
-														<img
-															className='img-fluid'
-															src={JPMC}
-															alt='Picture about Project'
-														/>
-													</div>
+						<TableRow>
+							<TableCell
+								style={{ paddingBottom: 0, paddingTop: 0 }}
+								colSpan={6}
+							>
+								<Collapse
+									in={open}
+									timeout='auto'
+									unmountOnExit
+								>
+									{/* <Box margin={1}> */}
+									<div className='container'>
+										<div className='row'>
+											<div className='col-md-12 col-sm-12 dataDropdownContainer'>
+												<div className='dataContainer'>
+													<p className='text10 sourceSansText whiteText boldText'>
+														About {title}
+													</p>
+													<p className='text10 sourceSansText whiteText'>
+														{description}
+													</p>
+													<p className='text10 sourceSansText whiteText'>
+														<b>
+															Technologies Used:
+														</b>{' '}
+														{tech}
+													</p>
+												</div>
+
+												<div className='dataPictureContainer'>
+													<img
+														className='img-fluid'
+														src={JPMC}
+														alt='Picture about Project'
+													/>
 												</div>
 											</div>
 										</div>
-										{/* <Typography
-												variant='h6'
-												gutterBottom
-												component='div'
-											>
-												History
-											</Typography> */}
-										{/* <Table size='small' aria-label='purchases'>
-												<TableHead>
-													<TableRow>
-														<TableCell>Date</TableCell>
-														<TableCell>Customer</TableCell>
-														<TableCell align='right'>
-															Amount
-														</TableCell>
-														<TableCell align='right'>
-															Total price ($)
-														</TableCell>
-													</TableRow>
-												</TableHead> */}
-										{/* <TableBody> */}
-										{/* {row.history.map((historyRow) => (
-														<TableRow key={historyRow.date}>
-															<TableCell
-																component='th'
-																scope='row'
-															>
-																{historyRow.date}
-															</TableCell>
-															<TableCell>
-																{historyRow.customerId}
-															</TableCell>
-															<TableCell align='right'>
-																{historyRow.amount}
-															</TableCell>
-															<TableCell align='right'>
-																{Math.round(
-																	historyRow.amount *
-																		row.price *
-																		100
-																) / 100}
-															</TableCell>
-														</TableRow>
-													))}
-												</TableBody> */}
-										{/* </Table> */}
-										{/* </Box> */}
-									</Collapse>
-								</TableCell>
-							</TableRow>
-						</React.Fragment>
-					);
-				});
+									</div>
+								</Collapse>
+							</TableCell>
+						</TableRow>
+					</React.Fragment>
+				);
 			});
+			// });
 		}
 
 		return null;
+	}
+
+	const { data } = props;
+
+	let sortedData;
+	if (data !== null && data !== undefined) {
+		sortedData = data.sort(
+			(a, b) => Object.values(b)[0].year - Object.values(a)[0].year
+		);
 	}
 
 	return (
@@ -253,7 +244,19 @@ export default function DataList(props) {
 					<TableHead>
 						<TableRow>{createTableCells()}</TableRow>
 					</TableHead>
-					<TableBody>{createTableRows()}</TableBody>
+					{/* <TableBody>{createTableRows()}</TableBody> */}
+					<TableBody>
+						{/* {
+							sortedData.map((projectData, index) => {
+								<Row projectData={projectData} />
+							))}
+						} */}
+						<TableBody>
+							{sortedData.map((projectData) => (
+								<Row projectData={projectData} />
+							))}
+						</TableBody>
+					</TableBody>
 				</Table>
 			</TableContainer>
 		</div>

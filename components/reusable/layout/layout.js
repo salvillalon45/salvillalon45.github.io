@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
 				<meta property='twitter:card' content='summary_large_image' />
 
 				<meta property='twitter:url' content='https://metatags.io/' />
-				
+
 				<meta
 					property='twitter:title'
 					content='Salvador Villalon Official Website'
@@ -82,7 +82,7 @@ export default function Layout({ children, home }) {
 					integrity='sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS'
 					crossorigin='anonymous'
 				></script>
-				
+
 				{/* <script defer src='./js/bootstrap.js' crossorigin='anonymous' /> */}
 				<script
 					src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'
@@ -90,13 +90,17 @@ export default function Layout({ children, home }) {
 					crossorigin='anonymous'
 				></script>
 
-				
-				
+				<link
+					rel='stylesheet'
+					href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
+					integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk'
+					crossorigin='anonymous'
+				/>
 
 				{/* <script> */}
-  					{/* // Your web app's Firebase configuration */}
-  					{/* // For Firebase JS SDK v7.20.0 and later, measurementId is optional */}
-  					{/* var firebaseConfig = {
+				{/* // Your web app's Firebase configuration */}
+				{/* // For Firebase JS SDK v7.20.0 and later, measurementId is optional */}
+				{/* var firebaseConfig = {
 					apiKey: "AIzaSyCbR8sO2MQlGZT3WvU-hLYIu6SRN_Bh6Eo",
 					authDomain: "portfolio-v3-84ea4.firebaseapp.com",
 					projectId: "portfolio-v3-84ea4",
@@ -105,28 +109,27 @@ export default function Layout({ children, home }) {
 					appId: "1:278030025109:web:c5b16998bf46700a00369c",
 					measurementId: "G-104Y5D2EMB"
   					}; */}
-  					{/* // Initialize Firebase */}
-  					{/* firebase.initializeApp(firebaseConfig); */}
-  					{/* firebase.analytics(); */}
+				{/* // Initialize Firebase */}
+				{/* firebase.initializeApp(firebaseConfig); */}
+				{/* firebase.analytics(); */}
 				{/* </script> */}
 				{/* <script src="../util/firebase/firebaseConfig.js"></script> */}
 			</Head>
 			<body>
+				<NavBar navCheck={checkPage()} />
 
-			<NavBar navCheck={checkPage()} />
+				<main>{children}</main>
 
-			<main>{children}</main>
+				<Footer />
+				{/* <!-- The core Firebase JS SDK is always required and must be listed first --> */}
+				<script src='https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js'></script>
 
-			<Footer />
-			{/* <!-- The core Firebase JS SDK is always required and must be listed first --> */}
-				<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
-
-{/* <!-- TODO: Add SDKs for Firebase products that you want to use */}
- {/* https://firebase.google.com/docs/web/setup#available-libraries --> */}
-<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
-<script src="../../../util/firebase/firebase"></script>	
-	{/* {initFirebase()} */}
+				{/* <!-- TODO: Add SDKs for Firebase products that you want to use */}
+				{/* https://firebase.google.com/docs/web/setup#available-libraries --> */}
+				<script src='https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js'></script>
+				<script src='https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js'></script>
+				<script src='../../../util/firebase/firebase'></script>
+				{/* {initFirebase()} */}
 			</body>
 		</div>
 	);

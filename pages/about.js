@@ -23,19 +23,30 @@ import AboutPicture from '../public/images/about.jpg';
 // import LinkedIn from '../public/fontawesome/svgs/brands/linkedin.svg';
 // import GitHub from '../public/fontawesome/svgs/brands/github-square.svg';
 // import Medium from '../public/fontawesome/svgs/brands/medium.svg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // -----------------------------------------------
 
 export default function About() {
 	return (
 		<Layout>
 			<main>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-md-6 col-sm-6'>
+				{/* <div className='container'> */}
+				<Container>
+					<Row>
+						{/* <div className='row'> */}
+						<Col xs={12}>
+							{/* <div className='col-md-6 col-sm-6'> */}
 							<div className='aboutImageContainer'></div>
-						</div>
+							{/* </div> */}
+						</Col>
 
-						<div className='col-md-6 col-sm-6' id='rightSideContainer'>
+						<Col xs={12}>
+							{/* <div
+							className='col-md-6 col-sm-6'
+							id='rightSideContainer'
+						> */}
 							<p className='text70 whiteText boldText'>About</p>
 							<p className='text20 whiteText'>
 								Lorem ipsum dolor sit amet, consectetur
@@ -82,9 +93,12 @@ export default function About() {
 									</a>
 								</Link>
 							</div>
-						</div>
-					</div>
-				</div>
+						</Col>
+						{/* </div> */}
+						{/* </div> */}
+					</Row>
+					{/* </div> */}
+				</Container>
 			</main>
 		</Layout>
 	);
