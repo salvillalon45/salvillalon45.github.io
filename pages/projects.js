@@ -34,7 +34,7 @@ export default function Projects() {
 		<Layout>
 			<main>
 				{/* <div className='container'> */}
-				<Container>
+				<Container class>
 					<Row>
 						{/* <div className='row'> */}
 						{/* <div className='col-md-12 col-sm-12'> */}
@@ -55,6 +55,7 @@ export default function Projects() {
 							<p className='text70 whiteText boldText'>
 								Personal
 							</p>
+							<div className='line' />
 							<DataList
 								columnsArray={[
 									'',
@@ -75,6 +76,7 @@ export default function Projects() {
 							<p className='text70 whiteText boldText'>
 								Online Programs
 							</p>
+							<div className='line' />
 							<DataList
 								columnsArray={[
 									'',
@@ -97,6 +99,7 @@ export default function Projects() {
 							<p className='text70 whiteText boldText'>
 								Work and Internships
 							</p>
+							<div className='line' />
 							<DataList
 								columnsArray={[
 									'',
@@ -120,6 +123,7 @@ export default function Projects() {
 							<p className='text70 whiteText boldText'>
 								Hackathons
 							</p>
+							<div className='line' />
 							<DataList
 								columnsArray={[
 									'',

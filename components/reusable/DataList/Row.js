@@ -13,6 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Link from 'next/link';
 import JPMC from '../../../public/images/projects/jpmc.PNG';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 function Row(props) {
 	console.log('Inside row()');
@@ -35,11 +37,13 @@ function Row(props) {
 		console.log({ open });
 		if (open) {
 			console.log('Show UP');
-			return <p>YES</p>;
+			// return <p>YES</p>;
 			// return <i className='fas fa-angle-up faIcon' />;
+			return <KeyboardArrowUpIcon />;
 		}
 		console.log('Show DOWN');
-		return <p>NO</p>;
+		// return <p>NO</p>;
+		return <KeyboardArrowDownIcon />;
 		// return <i className='fas fa-angle-down faIcon' />;
 		// open ? (
 		// 	<i className='fas fa-angle-up faIcon' />

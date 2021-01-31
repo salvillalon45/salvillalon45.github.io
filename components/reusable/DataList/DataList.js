@@ -51,56 +51,21 @@ export default function DataList(props) {
 		});
 	}
 
-	// function showArrowIcon(open) {
-	// 	console.log('Inside showArrowIcon');
-	// 	console.log({ open });
-	// 	if (open) {
-	// 		console.log('Show UP');
-	// 		return <i className='fas fa-angle-up faIcon' />;
-	// 	}
-	// 	console.log('Show DOWN');
-	// 	return <i className='fas fa-angle-down faIcon' />;
-	// 	// open ? (
-	// 	// 	<i className='fas fa-angle-up faIcon' />
-	// 	// ) : (
-	// 	// 	<i className='fas fa-angle-down faIcon' />
-	// 	// );
-	// }
+	function showArrowIcon(open) {
+		if (open) {
+			return <KeyboardArrowUpIcon className='faIcon' />;
+		}
+
+		return <KeyboardArrowDownIcon className='faIcon' />;
+	}
 
 	function createTableRows() {
-		console.log('Inside createTableRows()');
 		const { data } = props;
 
 		if (data !== null && data !== undefined) {
 			const sortedData = data.sort(
 				(a, b) => Object.values(b)[0].year - Object.values(a)[0].year
 			);
-
-			function showArrowIcon(open, index, id) {
-				console.log('Inside showArrowIcon');
-				console.log({ open });
-				if (index === id) {
-					console.log('Match!');
-					if (open) {
-						console.log('Show UP');
-						return <i className='fas fa-angle-up faIcon' />;
-					}
-
-					console.log('Show DOWN');
-					return <i className='fas fa-angle-down faIcon' />;
-					// open ? (
-					// 	<i className='fas fa-angle-up faIcon' />
-					// ) : (
-					// 	<i className='fas fa-angle-down faIcon' />
-					// );
-				} else if (index !== id) {
-					console.log('NO Match!');
-					return <i className='fas fa-angle-up faIcon' />;
-				} else {
-					console.log('NEITHER Match!');
-					return <i className='fas fa-angle-down faIcon' />;
-				}
-			}
 
 			return sortedData.map((projectData, index) => {
 				const year = Object.values(projectData)[0].year;
@@ -113,10 +78,7 @@ export default function DataList(props) {
 				const projectHomePageLink = Object.values(projectData)[0]
 					.homepage_link;
 				const [open, setOpen] = useState(false);
-				const [id, setId] = useState('');
-				console.log('What is open:: ' + open);
-				console.log(projectData);
-				console.log({ index, id });
+
 				return (
 					<React.Fragment>
 						<TableRow>
@@ -125,22 +87,10 @@ export default function DataList(props) {
 									aria-label='expand row'
 									size='small'
 									onClick={() => {
-										console.log('In OnClikc');
-										console.log({ open });
-										if (index === id) {
-											console.log({ index, id });
-											setOpen(!open);
-										}
-										setId(index);
-										console.log({ open });
+										setOpen(!open);
 									}}
 								>
-									{showArrowIcon(open, index, id)}
-									{/* {open ? (
-										<i className='fas fa-angle-up faIcon' />
-									) : (
-										<i className='fas fa-angle-down faIcon' />
-									)} */}
+									{showArrowIcon(open)}
 								</IconButton>
 							</TableCell>
 
@@ -244,19 +194,19 @@ export default function DataList(props) {
 					<TableHead>
 						<TableRow>{createTableCells()}</TableRow>
 					</TableHead>
-					{/* <TableBody>{createTableRows()}</TableBody> */}
-					<TableBody>
-						{/* {
+					<TableBody>{createTableRows()}</TableBody>
+					{/* <TableBody> */}
+					{/* {
 							sortedData.map((projectData, index) => {
 								<Row projectData={projectData} />
 							))}
 						} */}
-						<TableBody>
+					{/* <TableBody>
 							{sortedData.map((projectData) => (
 								<Row projectData={projectData} />
 							))}
-						</TableBody>
-					</TableBody>
+						</TableBody> */}
+					{/* </TableBody> */}
 				</Table>
 			</TableContainer>
 		</div>
