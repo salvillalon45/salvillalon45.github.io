@@ -87,7 +87,7 @@ export default function NavBar(props) {
 							</a>
 						</Link>
 
-						<Link href='/'>
+						<Link href='https://drive.google.com/file/d/1c_fQ9x7sb9XeWdDHMKADShB_2fRCvB0G/view?usp=sharing'>
 							<a className='nav-link'>
 								<li className='nav-item text25 goldText boldText'>
 									Resume

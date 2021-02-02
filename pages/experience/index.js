@@ -17,15 +17,18 @@ import Link from 'next/link';
 // -----------------------------------------------
 // External Imports
 import Layout from '../../components/reusable/layout';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // -----------------------------------------------
 
 export default function ExperienceIndex() {
 	return (
 		<Layout>
 			<main>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-md-12 col-sm-12'>
+				<Container>
+					<Row>
+						<Col sm={12} xs={12}>
 							<p className='text70 whiteText boldText'>
 								Experience
 							</p>
@@ -44,7 +47,7 @@ export default function ExperienceIndex() {
 								</div>
 
 								<div className='buttonContainer'>
-									<Link href='../public/documents/Villalon_Salvador_Resume.pdf'>
+									<Link href='https://drive.google.com/file/d/1c_fQ9x7sb9XeWdDHMKADShB_2fRCvB0G/view?usp=sharing'>
 										<button className='goldText goldBorder text20 boldText sourceSansText'>
 											Resume
 										</button>
@@ -74,9 +77,9 @@ export default function ExperienceIndex() {
 									</Link>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
+						</Col>
+					</Row>
+				</Container>
 			</main>
 		</Layout>
 	);

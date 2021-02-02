@@ -174,7 +174,7 @@
 		"workInternships": [
 			{
 				"JPMCSummer2019-Thoughts": {
-					"title": "My Thoughts on my JPMC Summer 2019 Internship",
+					"title": "My JPMC Summer 2019 Internship Experience",
 					"github_repo_link": "https://github.com/salvillalon45/JPMCSummer2019-Thoughts",
 					"homepage_link": "http://jpmc_thoughts.surge.sh/",
 					"tech": "Bootstrap, React, Surge",
@@ -185,7 +185,7 @@
 			},
 			{
 				"SPGISummer2018-FlaskTutorial": {
-					"title": "My JPMC Summer 2019 Internship Experience!",
+					"title": "My First Tutorial",
 					"github_repo_link": "https://github.com/salvillalon45/SPGISummer2018-FlaskTutorial",
 					"homepage_link": "https://medium.freecodecamp.org/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492",
 					"tech": "HTML, CSS, Flask, Google App Engine, Medium",

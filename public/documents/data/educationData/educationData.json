@@ -1,0 +1,271 @@
+{
+	"education": {
+		"Formal Education": [
+			{
+				"Bachelor's of Science, Computer Science": {
+					"title": "Bachelor's of Science, Computer Science",
+					"organization_name": "University of California, Irvine",
+					"certificate_link": "https://uci.edu/",
+					"picture": "",
+					"description": "Received my Bachelors in Computer Science! Thank you UCI for the valuable college experience you gave me",
+					"tech": "Foundamentals of Computer Science to help me solve any problem",
+					"made_at": "Irvine, CA",
+					"timeframe": "Sept 2015 - Mar 2020",
+					"projects": [
+						{
+							"CS 121: Information Retrieval": [
+								"https://github.com/salvillalon45/Search-Engine",
+								"https://search-engine-uci.appspot.com/"
+							],
+							"CS 122B: Project in Databases and Web Application": [],
+							"CS 175: Project in AI": [
+								"https://github.com/salvillalon45/cs175-Detecting-Fake-Reviews",
+								"https://drive.google.com/a/uci.edu/file/d/1n7jS74nU2Ip4Fx4Rm78YEve3uIhPyzSK/view?usp=sharing"
+							],
+							"CS 125: Next Generation Search Systems": [
+								"https://github.com/salvillalon45/Healthi",
+								"https://docs.google.com/document/d/1uphjDZHBEOnBDy4JbT72Souv8pZyK0vJYjn6l9BZCQw/edit?usp=sharing"
+							]
+						}
+					]
+				}
+			}
+		],
+		"Certifications": [
+			{
+				"UC Irvine School of Social Sciences": {
+					"title": "Certificate of Cultural Competency",
+					"organization_name": "UC Irvine School of Social Sciences",
+					"certificate_link": "https://drive.google.com/file/d/1i_5CMi0DmLtJchwxzrf5xdzEfMPgF0_0/view?usp=sharing",
+					"picture": "",
+					"description": "Completed courses in the study of cultural knowledge and diversity, inequalities and advocacy, cultural gaps, and culturally effective leadership. This will help me become an ethical and great Software Engineer and Leader",
+					"tech": "",
+					"made_at": "Irvine, CA",
+					"timeframe": "Mar 2020",
+					"projects": []
+				}
+			},
+			{
+				"Responsive Web Design Developer Certification": {
+					"title": "Responsive Web Design Developer Certification",
+					"organization_name": "freeCodeCamp",
+					"certificate_link": "https://www.freecodecamp.org/certification/salvillalon45/responsive-web-design",
+					"picture": "",
+					"description": "Successfully completed freeCodeCamp's Responsive Web Design Developer Certification, representing approximately 300 hours of coursework",
+					"tech": "HTML, CSS, Applied Visual Design, Applied Accessibility, Responsive Web Design Principles, CSS Flexbox, CSS Grid",
+					"made_at": "Irvine, CA",
+					"timeframe": "Sept 2018",
+					"projects": [
+						{
+							"Project 1: Build a Tribute Page": [
+								"https://salvillalon45.github.io/freecodecamp-sherwynnTributepage/"
+							],
+							"Project 2: Build a Survey Form": [
+								"https://salvillalon45.github.io/freecodecamp-SurveyForm/"
+							],
+							"Project 3: Build a Product Landing Page": [
+								"https://salvillalon45.github.io/freecodecamp-TutorialDocumentation/"
+							],
+							"Project 4: Build a Technical Documentation Page": [
+								"https://salvillalon45.github.io/freecodecamp-TutorialDocumentation/"
+							],
+							"Project 5: Build a Personal Portfolio Webpage": [
+								"http://salvador-villalon.appspot.com/"
+							]
+						}
+					]
+				}
+			},
+			{
+				"Build Websites from Scratch, Web Development Fundamentals Certification": {
+					"title": "Build Websites from Scratch, Web Development Fundamentals Certification",
+					"organization_name": "Codecademy",
+					"certificate_link": "https://www.credential.net/zay1e5jk",
+					"picture": "",
+					"description": "Successfully completed the course Build Websites from Scratch, a 10-week curriculum of web development fundamentals issued on September 17, 2017",
+					"tech": "HTML, CSS, Bootstrap, JQuery, JavaScript, Command Line & Git, GitHub, Design Layout, Design Principles, Responsive Web Design Principles",
+					"made_at": "Irvine, CA",
+					"timeframe": "Sept 2018",
+					"projects": [
+						{
+							"Project: Secret Agent Supply": [
+								"https://salvillalon45.github.io/codecademy-secretAgentSupply/index.html"
+							],
+							"Project: Tea Cozy": [
+								"https://salvillalon45.github.io/codecademy-teaCozy/index.html"
+							],
+							"Project: Tortoiseshell Optics": [
+								"https://salvillalon45.github.io/codecademy-tortoiseshellOptics/"
+							],
+							"Project: Colmar Academy": [
+								"https://salvillalon45.github.io/codecademy-capstoneColmarAcademy/capstone_colmar_assets/"
+							],
+							"Project: Jumpstart": [
+								"https://salvillalon45.github.io/codecademy-jumpstart/"
+							],
+							"Project: Fotomatic": [
+								"https://salvillalon45.github.io/codecademy-capstoneFotomaticProject/F1C1_start/"
+							],
+							"Project: Execursion": [
+								"https://salvillalon45.github.io/codecademy-excursion/"
+							]
+						}
+					]
+				}
+			},
+			{
+				"CodePath’s Android Development Course": {
+					"title": "CodePath’s Android Development Course",
+					"organization_name": "Codepath",
+					"certificate_link": "https://drive.google.com/file/d/1_VVJsJ0R1_Xh5pvwWI70wUsdIavnsOrR/view?usp=sharing",
+					"picture": "",
+					"description": "This course is a semester long project-based exploration into Android mobile app development focusing on the design and implementation of RESTful API clients. In the first half of the course, students develop skills by completing coding labs and building three fully functional app assignment projects. In the second half of the course students will apply their skills, working together in small teams, to design and and build an original app from the ground up.",
+					"tech": "Android, Parse, APIs",
+					"made_at": "Remote Course Taken in Calexico, CA",
+					"timeframe": "Apr 2020 - June 2020",
+					"projects": [
+						{
+							"Project 0: Simple Todo": [
+								"https://github.com/salvillalon45/codepath-SimpleTodo"
+							],
+							"Project 1: Flixter": [
+								"https://github.com/salvillalon45/codepath-Flix"
+							],
+							"Project 2: Twitter": [
+								"https://github.com/salvillalon45/codepath-TwitterClient"
+							],
+							"Project 3: Instagram": [
+								"https://github.com/salvillalon45/codepath-Parsetagram"
+							],
+							"Final Group Project: Fit Tracker": [
+								"https://github.com/salvillalon45/fit-tracker"
+							]
+						}
+					]
+				}
+			}
+		],
+		"Online Programs": [
+			{
+				"Create a Front-End App with React": {
+					"title": "Create a Front-End App with React",
+					"organization_name": "Codecademy",
+					"certificate_link": "",
+					"picture": "",
+					"description": "Successfully completed the course Create Front-End App with React, an 8-week curriculum of web development using React and JavaScript from June 2019-August 2019. The course included: Introduction to JavaScript and Building Apps, JavaScript Functions, Arrays, and Loops, JavaScript Iterators, Objects, and Classes, Modern JavaScript: Modules and Browser Compatibility, Introduction to React, React: Components Interacting, React: Component State, AJAX Requests and API Interactions, React Capstone",
+					"tech": "JavaScript, React, Surge",
+					"made_at": "Chicago, IL",
+					"timeframe": "June 2019 - August 2019",
+					"projects": [
+						{
+							"Capstone Project: Jamming": [
+								"http://sv_jamming.surge.sh/"
+							]
+						}
+					]
+				}
+			},
+			{
+				"Intermediate Software Engineering (SE102)": {
+					"title": "Intermediate Software Engineering (SE102)",
+					"organization_name": "Codepath",
+					"certificate_link": "https://codepath.org/",
+					"picture": "",
+					"description": "Took CodePath's 12-week Technical Interview preparation course. The course focused on preparing students to solve challenging algorithm problems in real interviews at top companies. The course included lectures, interview practice, industry mentors, and advanced info sessions from senior engineers.",
+					"tech": "Behavioral and general interviewing tips, Practical data structures, Implementing efficient algorithms, Big O, Hash Tables, Linked Lists, Stacks and Queues, Binary Trees, Strings and Arrays",
+					"made_at": "Remote Course Taken in Chicago, IL",
+					"timeframe": "June 2019 - August 2019",
+					"projects": []
+				}
+			},
+			{
+				"Foundations": {
+					"title": "Foundations",
+					"organization_name": "The Odin Project",
+					"certificate_link": "https://www.theodinproject.com/courses/foundations",
+					"picture": "",
+					"description": "A hands-on introduction to all of the essential tools you'll need to build real, working websites. You'll learn what web developers actually do – the foundations you'll need for later courses. I enjoyed this course so much! Got to work on really cool projects and finally got to learn Javascript",
+					"tech": "HTML, CSS, Javascript, Git",
+					"made_at": "Remote Course Taken in Calexico, CA",
+					"timeframe": "Jan 2020 - June 2020",
+					"projects": [
+						{
+							"Project 1: Google Homepage Replica": [
+								"https://github.com/salvillalon45/theOdinProject-GoogleHomePage"
+							]
+						},
+						{
+							"Project 2: Rock, Paper, Scissors": [
+								"https://github.com/salvillalon45/theOdinProject-RockPaperScissors"
+							]
+						},
+						{
+							"Project 3: Etch-A-Sketch ": [
+								"https://github.com/salvillalon45/theOdinProject-EtchASketch"
+							]
+						},
+						{
+							"Project 4: Calculator": [
+								"https://github.com/salvillalon45/theOdinProject-Calculator"
+							]
+						},
+						{
+							"Project 5: Pomodoro Clock": [
+								"https://github.com/salvillalon45/theOdinProject-Pomodoro"
+							]
+						}
+					]
+				}
+			},
+			{
+				"Full Stack Javascript": {
+					"title": "Full Stack Javascript",
+					"organization_name": "The Odin Project",
+					"certificate_link": "https://www.theodinproject.com/paths/full-stack-javascript?",
+					"picture": "",
+					"description": "Learning how to master Javascript both in the Frontend and Backend",
+					"tech": "HTML, CSS, Javascript, Git, React, npm, Webpack, Jest",
+					"made_at": "Remote Course Taken in Calexico, CA",
+					"timeframe": "June 2020 - Present",
+					"projects": [
+						{
+							"Project 1: Library": [
+								"https://github.com/salvillalon45/theOdinProject-Library"
+							]
+						},
+						{
+							"Project 2: Tic Tac Toe": [
+								"https://github.com/salvillalon45/theOdinProject-TicTacToe"
+							]
+						},
+						{
+							"Project 3: Restaurant Page": [
+								"https://github.com/salvillalon45/theOdinProject-RestaurantPage"
+							]
+						},
+						{
+							"Project 4: To Do List": [
+								"https://github.com/salvillalon45/theOdinProject-TodoList"
+							]
+						},
+						{
+							"Project 5: Weather App": [
+								"https://github.com/salvillalon45/theOdinProject-WeatherApp"
+							]
+						},
+						{
+							"Project 9: Testing Practice": [
+								"https://github.com/salvillalon45/theOdinProject-TestingPracticeJest"
+							]
+						},
+						{
+							"Project 10: Battleship": [
+								"https://github.com/salvillalon45/theOdinProject-Battleship"
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

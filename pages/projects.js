@@ -33,20 +33,28 @@ export default function Projects() {
 	return (
 		<Layout>
 			<main>
-				{/* <div className='container'> */}
-				<Container class>
+				<Container>
 					<Row>
-						{/* <div className='row'> */}
-						{/* <div className='col-md-12 col-sm-12'> */}
 						<Col xs={12} sm={12}>
 							<p className='text70 whiteText boldText'>
 								Project Archive
 							</p>
+
 							<p className='text25 goldText'>
 								A big list of things I’ve worked on
 							</p>
-							{/* </div> */}
-							{/* </div> */}
+
+							<p className='text25 goldText'>
+								You can find more of my projects on GitHub!
+							</p>
+
+							<a
+								className='btn btn-primary'
+								href='https://github.com/salvillalon45'
+								role='button'
+							>
+								Find more on GitHub
+							</a>
 						</Col>
 					</Row>
 

@@ -35,7 +35,7 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Row from './Row';
 
 // Images
-import JPMC from '../../../public/images/projects/jpmc.PNG';
+import JPMC from '../../../public/images/projects/2018/jpmc.png';
 // -----------------------------------------------
 
 export default function DataList(props) {
@@ -73,6 +73,7 @@ export default function DataList(props) {
 				const madeAt = Object.values(projectData)[0].made_at;
 				const tech = Object.values(projectData)[0].tech;
 				const title = Object.values(projectData)[0].title;
+				const picture = Object.values(projectData)[0].picture;
 				const gitHublink = Object.values(projectData)[0]
 					.github_repo_link;
 				const projectHomePageLink = Object.values(projectData)[0]
@@ -159,7 +160,7 @@ export default function DataList(props) {
 												<div className='dataPictureContainer'>
 													<img
 														className='img-fluid'
-														src={JPMC}
+														src={picture}
 														alt='Picture about Project'
 													/>
 												</div>
