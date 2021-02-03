@@ -6,10 +6,6 @@
 // -----------------------------------------------
 
 // -----------------------------------------------
-// Redux
-// -----------------------------------------------
-
-// -----------------------------------------------
 // Necessary Imports
 import Link from 'next/link';
 // -----------------------------------------------
@@ -52,7 +48,7 @@ export default function DataList(props) {
 	}
 
 	function createTableRows() {
-		const { data, flag } = props;
+		const { data } = props;
 
 		if (data !== null && data !== undefined) {
 			const sortedData = data.sort(
@@ -69,19 +65,8 @@ export default function DataList(props) {
 					picture
 				} = Object.values(projectData)[0];
 
-				// if (flag === 'projects') {
-				// }
-
-				// const year = Object.values(projectData)[0].year;
-				// const description = Object.values(projectData)[0].description;
-				// const made_at = Object.values(projectData)[0].made_at;
-				// const tech = Object.values(projectData)[0].tech;
-				// const title = Object.values(projectData)[0].title;
-				// const picture = Object.values(projectData)[0].picture;
-				const gitHublink = Object.values(projectData)[0]
-					.github_repo_link;
-				const projectHomePageLink = Object.values(projectData)[0]
-					.homepage_link;
+				const certificate_link = Object.values(projectData)[0]
+					.certificate_link;
 				const [open, setOpen] = useState(false);
 
 				return (
@@ -99,37 +84,29 @@ export default function DataList(props) {
 								</IconButton>
 							</TableCell>
 
-							<TableCell component='th' scope='row'>
+							<TableCell
+								component='th'
+								scope='row'
+								align='center'
+							>
 								{year}
 							</TableCell>
 
-							<TableCell className='projectTitle' align='left'>
+							<TableCell className='projectTitle' align='center'>
 								{title}
 							</TableCell>
 
-							<TableCell align='left'>{made_at}</TableCell>
+							<TableCell align='center'>{made_at}</TableCell>
 
-							<TableCell align='left'>{tech}</TableCell>
-
-							<TableCell align='left'>
-								{/* <div className='linksContainer'>
-									<Link href={gitHublink}>
+							{/* <TableCell align='left'>
+								<div className='linksContainer'>
+									<Link href={certificate_link}>
 										<a>
 											<i className='fab fa-github-square faIcon' />
 										</a>
 									</Link>
-
-									<Link
-										href={{
-											pathname: projectHomePageLink
-										}}
-									>
-										<a>
-											<i className='fas fa-external-link-alt faIcon' />
-										</a>
-									</Link>
-								</div> */}
-							</TableCell>
+								</div>
+							</TableCell> */}
 						</TableRow>
 
 						<TableRow>

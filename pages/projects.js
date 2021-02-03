@@ -73,10 +73,10 @@ export default function Projects() {
 									'Built With',
 									'Link'
 								]}
-								data={projectsState.gitHubReposData.personal}
+								data={projectsState.projectsData.personal}
+								flag={'projects'}
 							/>
 						</Col>
-						{/* </div> */}
 					</Row>
 
 					<Row>
@@ -94,12 +94,10 @@ export default function Projects() {
 									'Built With',
 									'Link'
 								]}
-								data={
-									projectsState.gitHubReposData.onlinePrograms
-								}
+								data={projectsState.projectsData.onlinePrograms}
+								flag={'projects'}
 							/>
 						</Col>
-						{/* </div> */}
 					</Row>
 
 					<Row>
@@ -118,12 +116,11 @@ export default function Projects() {
 									'Link'
 								]}
 								data={
-									projectsState.gitHubReposData
-										.workInternships
+									projectsState.projectsData.workInternships
 								}
+								flag={'projects'}
 							/>
 						</Col>
-						{/* </div> */}
 					</Row>
 
 					<Row>
@@ -141,10 +138,10 @@ export default function Projects() {
 									'Built With',
 									'Link'
 								]}
-								data={projectsState.gitHubReposData.hackathons}
+								data={projectsState.projectsData.hackathons}
+								flag={'projects'}
 							/>
 						</Col>
-						{/* </div> */}
 					</Row>
 				</Container>
 			</main>

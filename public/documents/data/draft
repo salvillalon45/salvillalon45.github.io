@@ -1,0 +1,20 @@
+"JPMC": [
+	{
+		"JPMC Intern": {
+			"made_at": "Chicago, IL",
+			"organization_name": "JPMorgan Chase & Co",
+			"picture": "",
+			"description": [
+				"Built and deployed a full-stack web application with a team of interns using React, Groovy, and Spring Boot to remove a manual process for updating client customer configurations that resulted in 3+ hours of efficiency",
+				"Led the design and implementation of the web application’s backend and built its communication using Rest Templates with the frontend and internal JPMC APIs",
+				"Developed a process to mount the React frontend to run inside a Spring Boot application for JPMC Non-Node.js server environments",
+				"Implemented efficient and intuitive user interfaces according to mockups created by UI/UX team",
+				"Researched and integrated JPMC’s internal OAuth into the web application to authenticate and authorize application users",
+				"Created unit tests for backend functionalities using Spock and Groovy"
+			],
+			"tech": "React, JavaScript, Groovy, OAuth, Spring Boot, Spock, Gradle, IntelliJ, Bitbucket, Jira",
+			"title": "Software Engineer Intern",
+			"year": "Jun 2019 - Aug 2019"
+		}
+	}
+]

@@ -23,7 +23,14 @@ import '../styles/global.less';
 // -----------------------------------------------
 // External Imports
 import { getGithubRepos, readGitHubRepos } from '../util/firebase/githubApi';
-import { storeGitHubRepos } from '../store/actions/projectsActions';
+import {
+	getEducationData,
+	readEducationData
+} from '../util/firebase/educationApi';
+import {
+	storeProjectsData,
+	storeEducationData
+} from '../store/actions/projectsActions';
 // -----------------------------------------------
 
 function MyApp({ Component, pageProps }) {
@@ -38,7 +45,12 @@ function MyApp({ Component, pageProps }) {
 		// Retrieve Data from Firebase GitHubRepo db
 		readGitHubRepos().then((result) => {
 			// Store it in redux store
-			dispatch(storeGitHubRepos(result));
+			dispatch(storeProjectsData(result));
+		});
+
+		readEducationData().then((result) => {
+			// Store it in redux store
+			dispatch(storeEducationData(result));
 		});
 
 		console.log('Finished useEffect in App');
