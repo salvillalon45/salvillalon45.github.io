@@ -25,10 +25,7 @@ import Col from 'react-bootstrap/Col';
 // -----------------------------------------------
 
 export default function Projects() {
-	const projectsState = useSelector((state) => state.projects);
-
-	console.log('What is projectStaet');
-	console.log(projectsState);
+	const portfolioState = useSelector((state) => state.portfolio);
 
 	return (
 		<Layout>
@@ -73,7 +70,7 @@ export default function Projects() {
 									'Built With',
 									'Link'
 								]}
-								data={projectsState.projectsData.personal}
+								data={portfolioState.projectsData.personal}
 								flag={'projects'}
 							/>
 						</Col>
@@ -94,7 +91,9 @@ export default function Projects() {
 									'Built With',
 									'Link'
 								]}
-								data={projectsState.projectsData.onlinePrograms}
+								data={
+									portfolioState.projectsData.onlinePrograms
+								}
 								flag={'projects'}
 							/>
 						</Col>
@@ -116,7 +115,7 @@ export default function Projects() {
 									'Link'
 								]}
 								data={
-									projectsState.projectsData.workInternships
+									portfolioState.projectsData.workInternships
 								}
 								flag={'projects'}
 							/>
@@ -138,7 +137,7 @@ export default function Projects() {
 									'Built With',
 									'Link'
 								]}
-								data={projectsState.projectsData.hackathons}
+								data={portfolioState.projectsData.hackathons}
 								flag={'projects'}
 							/>
 						</Col>

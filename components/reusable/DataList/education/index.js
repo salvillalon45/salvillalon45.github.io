@@ -1,3 +1,3 @@
-import DataList from './DataList';
+import EducationDataList from './EducationDataList';
 
-export default DataList;
+export default EducationDataList;

@@ -19,7 +19,8 @@ import Link from 'next/link';
 // -----------------------------------------------
 // External Imports
 import Layout from '../../components/reusable/layout';
-import DataList from '../../components/reusable/DataList/education';
+import EducationDataList from '../../components/reusable/DataList/education';
+import WorkDataList from '../../components/reusable/DataList/work';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -31,14 +32,15 @@ import IconButton from '@material-ui/core/IconButton';
 // -----------------------------------------------
 
 export default function Student() {
-	const projectsState = useSelector((state) => state.projects);
-	console.log(projectsState);
-	console.table(projectsState.educationData['Formal Education']);
+	const portfolioState = useSelector((state) => state.portfolio);
+	// console.log(portfolioState);
+	// console.table(portfolioState.educationData['Formal Education']);
 
 	const [openEducation, setOpenEducation] = useState(false);
+	const [openWork, setOpenWork] = useState(false);
 
-	function showArrowIcon(openEducation) {
-		if (openEducation) {
+	function showArrowIcon(open) {
+		if (open) {
 			return <KeyboardArrowUpIcon className='faIcon' />;
 		}
 
@@ -86,7 +88,7 @@ export default function Student() {
 									Formal Education
 								</p>
 								<div className='line' />
-								<DataList
+								<EducationDataList
 									columnsArray={[
 										'',
 										'Year',
@@ -94,7 +96,7 @@ export default function Student() {
 										'Location'
 									]}
 									data={
-										projectsState.educationData[
+										portfolioState.educationData[
 											'Formal Education'
 										]
 									}
@@ -108,7 +110,7 @@ export default function Student() {
 									Online Programs
 								</p>
 								<div className='line' />
-								<DataList
+								<EducationDataList
 									columnsArray={[
 										'',
 										'Year',
@@ -116,7 +118,7 @@ export default function Student() {
 										'Location'
 									]}
 									data={
-										projectsState.educationData[
+										portfolioState.educationData[
 											'Online Programs'
 										]
 									}
@@ -130,7 +132,7 @@ export default function Student() {
 									Certifications
 								</p>
 								<div className='line' />
-								<DataList
+								<EducationDataList
 									columnsArray={[
 										'',
 										'Year',
@@ -138,7 +140,7 @@ export default function Student() {
 										'Location'
 									]}
 									data={
-										projectsState.educationData[
+										portfolioState.educationData[
 											'Certifications'
 										]
 									}
@@ -153,17 +155,36 @@ export default function Student() {
 								Work Experience
 							</p>
 							<div className='line' />
-							<DataList
-								columnsArray={[
-									'',
-									'Year',
-									'Title',
-									'Location',
-									'Link'
-								]}
-							/>
+
+							<IconButton
+								aria-label='expand row'
+								size='small'
+								onClick={() => {
+									setOpenWork(!openWork);
+								}}
+							>
+								{showArrowIcon(openWork)}
+							</IconButton>
 						</Col>
 					</Row>
+
+					<Collapse in={openWork} timeout='auto' unmountOnExit>
+						<Row>
+							<Col xs={12} sm={12}>
+								<div className='line' />
+								<WorkDataList
+									columnsArray={[
+										'',
+										'Year',
+										'Title',
+										'Company',
+										'Location'
+									]}
+									data={portfolioState.workData}
+								/>
+							</Col>
+						</Row>
+					</Collapse>
 				</Container>
 			</main>
 		</Layout>

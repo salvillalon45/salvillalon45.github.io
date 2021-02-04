@@ -27,10 +27,8 @@ import {
 	getEducationData,
 	readEducationData
 } from '../util/firebase/educationApi';
-import {
-	storeProjectsData,
-	storeEducationData
-} from '../store/actions/projectsActions';
+import { readDataFromFirebase } from '../util/firebase/firebaseApi';
+import { storePortfolioData } from '../store/actions/portfolioActions';
 // -----------------------------------------------
 
 function MyApp({ Component, pageProps }) {
@@ -39,18 +37,21 @@ function MyApp({ Component, pageProps }) {
 	const projectsState = useSelector((state) => state.projects);
 	useEffect(() => {
 		console.log('Start useEffect in App');
-		// Get GitHub Repos
-		// getGithubRepos();
 
 		// Retrieve Data from Firebase GitHubRepo db
-		readGitHubRepos().then((result) => {
+		readDataFromFirebase('projects').then((result) => {
 			// Store it in redux store
-			dispatch(storeProjectsData(result));
+			dispatch(storePortfolioData(result, 'projects'));
 		});
 
-		readEducationData().then((result) => {
+		readDataFromFirebase('education').then((result) => {
 			// Store it in redux store
-			dispatch(storeEducationData(result));
+			dispatch(storePortfolioData(result, 'education'));
+		});
+
+		readDataFromFirebase('work').then((result) => {
+			// Store it in redux store
+			dispatch(storePortfolioData(result, 'work'));
 		});
 
 		console.log('Finished useEffect in App');

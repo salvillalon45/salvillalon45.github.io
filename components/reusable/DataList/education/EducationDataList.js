@@ -26,7 +26,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 // -----------------------------------------------
 
-export default function DataList(props) {
+export default function EducationDataList(props) {
 	function createTableCells() {
 		const { columnsArray } = props;
 

@@ -1,23 +1,39 @@
 {
-	"Vusar": {
-		"made_at": "Irvine, CA",
-		"organization_name": "Vusar",
-		"picture": "",
+	"AIP": {
 		"description": [
-			"Collaborate and leading the refactoring of current React only platform to Next.js to allow for scaling and maintainability ",
-			"Built and developed 13+ features for Vusar’s Dashboard Web Application that allows users to interact with their uploaded objects, create projects, and share projects with other users, and manage teams",
-			"Created the first ever onboarding documentations and guides for new hires",
-			"Implemented efficient and intuitive user interfaces according to mockups created by UI/UX team",
-			"Coordinate with CPO and CTO in Sprint planning to enhance Vusar’s Dashboard Web Application"
+			"Designed and developed a web application for students to apply for the Administrative Intern Program",
+			"Built the Administrative Tools that allows Supervisor and Coordinators to access and review Student Applications"
 		],
-		"tech": "Redux, Next.js, SWR, React, JavaScript, HTML, CSS, Material UI, Webpack, Firebase, third party APIs such as Zendesk, and internal Vusar APIs, WebStorm, GitHub, Jira",
-		"title": "Software Engineer Intern",
-		"year": "Oct 2019 - Sep 2020"
+		"made_at": "Irvine, CA",
+		"organization_name": "UCI Administrative Intern Program (AIP)",
+		"picture": "https://firebasestorage.googleapis.com/v0/b/portfolio-v3-84ea4.appspot.com/o/logos%2Fwork%2Faip_logo.png?alt=media&token=99d98e4e-a06c-41fa-9d7d-42e3bea10288",
+		"tech": "HTML, CSS, PHP, MySQL, Bootstrap",
+		"title": "Software Development Intern",
+		"year": "Jun 2018 - Aug 2018"
+	},
+	"DFS": {
+		"description": [
+			"Dreams for Schools Instructor teaching 6th - 8th grade students the fundamentals of Web Development using HTML, CSS, Bootstrap and JavaScript"
+		],
+		"made_at": "Santa Ana, CA",
+		"organization_name": "Dreams For Schools - Web Development Program",
+		"picture": "https://firebasestorage.googleapis.com/v0/b/portfolio-v3-84ea4.appspot.com/o/logos%2Fwork%2Fdfs.png?alt=media&token=ee33d30e-e80f-4703-a522-0c278fb2e686",
+		"tech": "HTML, CSS",
+		"title": "Web Development Instructor",
+		"year": "Aug 2020 - Nov 2020"
+	},
+	"FO": {
+		"description": [
+			"Full Stack Engineer usings NextJS, Redux, React, MySQL, NodeJS, and Express to create custom applications to clients"
+		],
+		"made_at": "Newport Beach, CA",
+		"organization_name": "FinityOne",
+		"picture": "https://firebasestorage.googleapis.com/v0/b/portfolio-v3-84ea4.appspot.com/o/logos%2Fwork%2Ffo_2.png?alt=media&token=14c5ea5e-43d8-4c1c-a9ea-7246b605b947",
+		"tech": "NextJS, Redux, React, MySQL, NodeJS, Express, AdobeXD, Bootstrap, ",
+		"title": "Software Developer Intern",
+		"year": "Sep 2020 - Dec 2020"
 	},
 	"JPMC": {
-		"made_at": "Chicago, IL",
-		"organization_name": "JPMorgan Chase & Co",
-		"picture": "",
 		"description": [
 			"Built and deployed a full-stack web application with a team of interns using React, Groovy, and Spring Boot to remove a manual process for updating client customer configurations that resulted in 3+ hours of efficiency",
 			"Led the design and implementation of the web application’s backend and built its communication using Rest Templates with the frontend and internal JPMC APIs",
@@ -26,14 +42,14 @@
 			"Researched and integrated JPMC’s internal OAuth into the web application to authenticate and authorize application users",
 			"Created unit tests for backend functionalities using Spock and Groovy"
 		],
+		"made_at": "Chicago, IL",
+		"organization_name": "JPMorgan Chase & Co",
+		"picture": "https://firebasestorage.googleapis.com/v0/b/portfolio-v3-84ea4.appspot.com/o/logos%2Fwork%2Fjpmc_3.png?alt=media&token=06c219da-bc52-46cf-aeae-15c747d5aec2",
 		"tech": "React, JavaScript, Groovy, OAuth, Spring Boot, Spock, Gradle, IntelliJ, Bitbucket, Jira",
 		"title": "Software Engineer Intern",
 		"year": "Jun 2019 - Aug 2019"
 	},
 	"SPDJI": {
-		"made_at": "New York, NY",
-		"organization_name": "S&P Dow Jones Indices",
-		"picture": "",
 		"description": [
 			"Designed functionality that allows users to remove documents on internal tool by building a RESTful Java client that connects to third party vendor API to accomplish task",
 			"Leveraged fluency in Spanish to collaborate with SPDJI Mexico City office to create RESTful client",
@@ -42,42 +58,26 @@
 			"Researched and integrated JPMC’s internal OAuth into the web application to authenticate and authorize application users",
 			"Implemented Natural Language Processing methods such as Tf-Idf, Text Summarizing, Work Ranking on company blogs by using Python and Open Source libraries: Gensim, NLTK, TextBlob"
 		],
+		"made_at": "New York, NY",
+		"organization_name": "S&P Dow Jones Indices",
+		"picture": "https://firebasestorage.googleapis.com/v0/b/portfolio-v3-84ea4.appspot.com/o/logos%2Fwork%2Fspdji_logo.png?alt=media&token=6ce1c96d-ad12-4e3a-b155-c118d2c70998",
 		"tech": "HTML, CSS, Bootstrap, Git, Flask, Google App Engine, GitHub Pages, Docker, Java, Eclipse, Postman, Spring Framework, Python, NLTK, TextBlob, Gensim, Natural Language Processing Methods Tf-Idf, Text Summarizing, and Word Ranking",
 		"title": "Software Development Intern",
 		"year": "Jun 2018 - Aug 2018"
 	},
-	"AIP": {
+	"Vusar": {
+		"description": [
+			"Collaborate and leading the refactoring of current React only platform to Next.js to allow for scaling and maintainability ",
+			"Built and developed 13+ features for Vusar’s Dashboard Web Application that allows users to interact with their uploaded objects, create projects, and share projects with other users, and manage teams",
+			"Created the first ever onboarding documentations and guides for new hires",
+			"Implemented efficient and intuitive user interfaces according to mockups created by UI/UX team",
+			"Coordinate with CPO and CTO in Sprint planning to enhance Vusar’s Dashboard Web Application"
+		],
 		"made_at": "Irvine, CA",
-		"organization_name": "UCI Administrative Intern Program (AIP)",
-		"picture": "",
-		"description": [
-			"Designed and developed a web application for students to apply for the Administrative Intern Program",
-			"Built the Administrative Tools that allows Supervisor and Coordinators to access and review Student Applications"
-		],
-		"tech": "HTML, CSS, PHP, MySQL, Bootstrap",
-		"title": "Software Development Intern",
-		"year": "Jun 2018 - Aug 2018"
-	},
-	"DFS": {
-		"made_at": "Santa Ana, CA",
-		"organization_name": "Dreams For Schools - Web Development Program",
-		"picture": "",
-		"description": [
-			"Dreams for Schools Instructor teaching 6th - 8th grade students the fundamentals of Web Development using HTML, CSS, Bootstrap and JavaScript"
-		],
-		"tech": "HTML, CSS",
-		"title": "Web Development Instructor",
-		"year": "Aug 2020 - Nov 2020"
-	},
-	"FO": {
-		"made_at": "Newport Beach, CA",
-		"organization_name": "FinityOne",
-		"picture": "",
-		"description": [
-			"Full Stack Engineer usings NextJS, Redux, React, MySQL, NodeJS, and Express to create custom applications to clients"
-		],
-		"tech": "NextJS, Redux, React, MySQL, NodeJS, Express, AdobeXD, Bootstrap, ",
-		"title": "Software Developer Intern",
-		"year": "Sep 2020 - Dec 2020"
+		"organization_name": "Vusar",
+		"picture": "https://firebasestorage.googleapis.com/v0/b/portfolio-v3-84ea4.appspot.com/o/logos%2Fwork%2Fvusar.png?alt=media&token=ea634ca3-ba43-4664-b2de-903d2ae94d88",
+		"tech": "Redux, Next.js, SWR, React, JavaScript, HTML, CSS, Material UI, Webpack, Firebase, third party APIs such as Zendesk, and internal Vusar APIs, WebStorm, GitHub, Jira",
+		"title": "Software Engineer Intern",
+		"year": "Oct 2019 - Sep 2020"
 	}
 }
