@@ -30,7 +30,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 // -----------------------------------------------
 
-export default function DataList(props) {
+export default function ProjectsDataList(props) {
 	function createTableCells() {
 		const { columnsArray } = props;
 
@@ -59,7 +59,7 @@ export default function DataList(props) {
 				(a, b) => Object.values(b)[0].year - Object.values(a)[0].year
 			);
 
-			return sortedData.map((projectData, index) => {
+			return sortedData.map((dataObj) => {
 				const {
 					year,
 					description,
@@ -67,20 +67,10 @@ export default function DataList(props) {
 					tech,
 					title,
 					picture
-				} = Object.values(projectData)[0];
+				} = Object.values(dataObj)[0];
 
-				// if (flag === 'projects') {
-				// }
-
-				// const year = Object.values(projectData)[0].year;
-				// const description = Object.values(projectData)[0].description;
-				// const made_at = Object.values(projectData)[0].made_at;
-				// const tech = Object.values(projectData)[0].tech;
-				// const title = Object.values(projectData)[0].title;
-				// const picture = Object.values(projectData)[0].picture;
-				const gitHublink = Object.values(projectData)[0]
-					.github_repo_link;
-				const projectHomePageLink = Object.values(projectData)[0]
+				const gitHublink = Object.values(dataObj)[0].github_repo_link;
+				const projectHomePageLink = Object.values(dataObj)[0]
 					.homepage_link;
 				const [open, setOpen] = useState(false);
 
@@ -176,7 +166,6 @@ export default function DataList(props) {
 					</React.Fragment>
 				);
 			});
-			// });
 		}
 
 		return null;
@@ -199,18 +188,6 @@ export default function DataList(props) {
 						<TableRow>{createTableCells()}</TableRow>
 					</TableHead>
 					<TableBody>{createTableRows()}</TableBody>
-					{/* <TableBody> */}
-					{/* {
-							sortedData.map((projectData, index) => {
-								<Row projectData={projectData} />
-							))}
-						} */}
-					{/* <TableBody>
-							{sortedData.map((projectData) => (
-								<Row projectData={projectData} />
-							))}
-						</TableBody> */}
-					{/* </TableBody> */}
 				</Table>
 			</TableContainer>
 		</div>

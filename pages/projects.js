@@ -18,7 +18,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // -----------------------------------------------
 // External Imports
 import Layout from '../components/reusable/layout';
-import DataList from '../components/reusable/DataList';
+import ProjectsDataList from '../components/reusable/projects/ProjectsDataList';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -61,7 +61,7 @@ export default function Projects() {
 								Personal
 							</p>
 							<div className='line' />
-							<DataList
+							<ProjectsDataList
 								columnsArray={[
 									'',
 									'Year',
@@ -82,7 +82,7 @@ export default function Projects() {
 								Online Programs
 							</p>
 							<div className='line' />
-							<DataList
+							<ProjectsDataList
 								columnsArray={[
 									'',
 									'Year',
@@ -105,7 +105,7 @@ export default function Projects() {
 								Work and Internships
 							</p>
 							<div className='line' />
-							<DataList
+							<ProjectsDataList
 								columnsArray={[
 									'',
 									'Year',
@@ -128,7 +128,7 @@ export default function Projects() {
 								Hackathons
 							</p>
 							<div className='line' />
-							<DataList
+							<ProjectsDataList
 								columnsArray={[
 									'',
 									'Year',

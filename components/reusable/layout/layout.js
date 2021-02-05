@@ -116,7 +116,7 @@ export default function Layout({ children, home }) {
 				{/* <script src="../util/firebase/firebaseConfig.js"></script> */}
 			</Head>
 			<body>
-				<NavBar navCheck={checkPage()} />
+				{/* <NavBar navCheck={checkPage()} /> */}
 
 				<main>{children}</main>
 

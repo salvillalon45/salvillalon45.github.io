@@ -18,13 +18,18 @@ import Link from 'next/link';
 
 // -----------------------------------------------
 // External Imports
+
+// Reusable
 import Layout from '../../components/reusable/layout';
 import EducationDataList from '../../components/reusable/DataList/education';
 import WorkDataList from '../../components/reusable/DataList/work';
+
+// Bootstrap
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+// MaterialUI
 import Collapse from '@material-ui/core/Collapse';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
